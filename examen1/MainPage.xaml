@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examen1.MainPage">
+    <Grid BackgroundColor="#FEE689">
+
+        <Grid Grid.Row="0" Margin="0,10,0,0">
+            <StackLayout  Orientation="Vertical" 
+                      HorizontalOptions="StartAndExpand" 
+                      Margin="30,30" 
+                      VerticalOptions="StartAndExpand">
+
+                <Label Text="APLICACIONES MOVILES QUIZ" 
+                       TextColor="Blue"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand" 
+                       FontAttributes="Bold"
+                       FontFamily="Lobster-Regular"
+                       FontSize="20"/>
+
+                <Label Text="Seleccione la respuesta correcta"
+                       TextColor="Green"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       FontAttributes="Italic"
+                       FontSize="15"/>
+
+                <Label x:Name="lblpreguntita"
+                       Text="1. Algunos ejemplos de sistemas operativos para PC, son." 
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       FontSize="13"/>
+
+            </StackLayout>
+
+            <StackLayout Margin="20, 150,20,20">
+                <Button Text=" Android, Ubuntu y Unix" x:Name="btnresp1"
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Aquamarine"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    Clicked="Button1_Clicked" ></Button>
+                <Button Text="GNU/Linux, Windows y Unix   CORRECTA" x:Name="btnresp2"
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Aquamarine"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    Clicked="Button2_Clicked" ></Button>
+                <Button Text="IOS, Windows 7 y Windows XP" x:Name="btnresp3"
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Aquamarine"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    Clicked="Button3_Clicked" ></Button>
+                <Button Text="IOS, Windows 7 y Windows XP" x:Name="btnresp4"
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Aquamarine"
+                    BorderWidth="3"
+                    CornerRadius="10"
+                    Clicked="Button4_Clicked" ></Button>
+
+                <StackLayout>
+                    <Grid Margin="0,30,0,0">
+                        <Button Text="Mostrar Puntuación Final" x:Name="btnPuntuacion"
+                    TextColor="Black"
+                    BackgroundColor="Gray"
+                    BorderColor="Aquamarine"
+                    BorderWidth="5"
+                    CornerRadius="60"
+                    Clicked="MostrarAlerta"
+                    IsVisible="False">
+                        </Button>
+                    </Grid>
+                </StackLayout>
+
+                <Label Text="Quiz de 4 preguntas" 
+                       x:Name="lblpuntuacion"
+                       TextColor="White"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="EndAndExpand" 
+                       FontAttributes="Bold"
+                       FontFamily="Lobster-Regular"
+                       FontSize="14"/>
+
+            </StackLayout>
+
+        </Grid>
+
+
+    </Grid>
+
+
+
+</ContentPage>
